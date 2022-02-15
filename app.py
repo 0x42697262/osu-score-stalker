@@ -1,10 +1,10 @@
-from email.policy import default
+#from email.policy import default
 from flask import Flask, send_from_directory
 from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS
 from api.testapi import HelloApiHandler
 
-app = Flask(__name__, static_url_path="", status_folder="frontend/build")
+app = Flask(__name__, static_url_path="", static_folder="frontend/build")
 CORS(app)
 api = Api(app)
 
