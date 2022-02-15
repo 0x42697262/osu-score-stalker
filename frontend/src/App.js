@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 function App() {
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(()=>{
-    axios.get('https://osu-score-stalker.herokuapp.com/flask/hello').then(response => {
+    axios.get('https://osu-score-stalker.herokuapp.com/api/touch_grass').then(response => {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {
