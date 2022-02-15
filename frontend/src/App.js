@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>React + Flask Tutorial</p>
+        <p>osu! score stalker</p>
         <div>{getMessage.status === 200 ? 
           <h3>{getMessage.data.message}</h3>
           :
